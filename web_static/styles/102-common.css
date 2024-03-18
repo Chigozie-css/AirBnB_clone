@@ -1,0 +1,43 @@
+/* Global Styles */
+body, .container {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #484848; /* Adjusted for better contrast */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto; /* Added margin for better spacing */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .filters {
+    flex-direction: column; /* Adjusted flex direction for smaller screens */
+  }
+
+  .locations, .amenities {
+    width: 100%; /* Set filters to full width on smaller screens */
+    margin-bottom: 20px; /* Added margin between filters on smaller screens */
+  }
+
+  .locations .popover, .amenities .popover {
+    width: 100%; /* Set popover width to full width on smaller screens */
+  }
+
+  .places article {
+    width: calc(50% - 40px); /* Adjusted width for responsive design */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .places article {
+    width: calc(100% - 40px); /* Adjusted width for smaller screens */
+  }
+}
